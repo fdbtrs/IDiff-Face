@@ -1,0 +1,27 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+checkpoint:
+  path: "idiff-face-iccv2023-code/trained_models/unet-cond-ca-bs512-150K-cpd25"
+
+  global_step: null
+  use_non_ema: false
+
+sampling:
+  seed: 42
+
+  contexts_file: "idiff-face-iccv2023-code/samples/contexts/random_synthetic_uniform_15000.npy"
+
+  batch_size: 50
+  n_contexts: 10050
+
+  n_samples_per_context: 50
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .

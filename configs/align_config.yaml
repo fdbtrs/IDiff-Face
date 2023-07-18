@@ -1,0 +1,36 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - paths: gpu_cluster                      # system-specific paths
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+align:
+
+  just_resize_if_fail: True
+
+  real_data_names:
+  - "ffhq_128"
+  - "lfw_250"
+
+  model_names:
+  #- "unet-cond-adagn-bs512-150K"
+  #- "unet-cond-adagn-bs512-150K-cpd25"
+  #- "unet-cond-adagn-bs512-150K-cpd50"
+  #- "unet-cond-ca-bs512-150K"
+  - "unet-cond-ca-bs512-150K-cpd25"
+  #- "unet-cond-ca-bs512-150K-cpd50"
+
+  contexts_names:
+  #- "random_elasticface_ffhq_5000"
+  - "random_synthetic_uniform_15000"
+  #- "random_synthetic_two_stage_15000"
+  #- "random_elasticface_lfw_13233"
+
+  image_size: 128
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .

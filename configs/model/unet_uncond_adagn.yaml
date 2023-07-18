@@ -1,0 +1,25 @@
+# PARAMS: 134595939
+_target_: models.diffusion.unet.ConditionalUNet
+input_channels: ${constants.input_channels}
+initial_channels: 96
+channel_multipliers:
+  - 1
+  - 2
+  - 2
+  - 2
+is_attention:
+  - false
+  - true
+  - true
+  - true
+attention_heads: -1
+attention_head_channels: 32
+n_blocks_per_resolution: 2
+
+condition_type: "AdaGN"                                          # ['AddPlusGN', 'AdaGN', 'DiffAE', 'CA']
+is_context_conditional: False                                  # context is only used if this is True
+n_context_classes: ${constants.n_classes}                     # set to 0 if context is not a discrete class label
+context_input_channels: 512                                   # size of the input context embedding
+context_channels: 256                                         # size of the shared context embedding across blocks
+learn_empty_context: False                                     # add learnable embedding to the model for empty contexts
+

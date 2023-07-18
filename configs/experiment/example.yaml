@@ -1,0 +1,9 @@
+# @package _global_
+
+defaults:
+  - override /diffusion: ddpm
+  - override /dataset: mnist
+
+constants:
+  image_size: 28
+  image_channels: 1

@@ -1,0 +1,30 @@
+# @package _global_
+
+constants:
+  input_channels: 3
+  n_classes: 0
+  image_size: 128
+
+latent_diffusion: True
+
+dataset:
+  _target_: utils.samples_with_embeddings_folder_dataset.SamplesWithEmbeddingsFolderDataset
+  samples_root: ${paths.data_root}/ffhq_128
+  embeddings_root: ${paths.data_root}/embeddings_synthetic_targets_ffhq_128
+  sample_file_ending: ".png"
+  embedding_file_ending: ".npy"
+  embedding_loader:
+    _target_: utils.samples_with_embeddings_folder_dataset.NumpyEmbeddingLoader
+  sample_loader:
+    _target_: utils.samples_with_embeddings_folder_dataset.PILImageLoader
+  sample_transform:
+    _target_: torchvision.transforms.Compose
+    transforms:
+      - _target_: torchvision.transforms.Resize
+        size:
+        - ${constants.image_size}
+        - ${constants.image_size}
+      - _target_: torchvision.transforms.ToTensor
+      - _target_: torchvision.transforms.RandomHorizontalFlip
+        p: 0.5
+                                                   

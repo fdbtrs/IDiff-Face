@@ -1,0 +1,19 @@
+# @package _global_
+
+constants:
+  image_size: 28
+  input_channels: 1
+  n_classes: 10
+
+dataset:
+  _target_: torchvision.datasets.mnist.MNIST
+  root: ${paths.data_root}
+  transform:
+    _target_: torchvision.transforms.Compose
+    transforms:
+      - _target_: torchvision.transforms.Resize
+        size:
+        - ${constants.image_size}
+        - ${constants.image_size}
+      - _target_: torchvision.transforms.ToTensor
+  download: true

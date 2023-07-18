@@ -1,0 +1,20 @@
+# @package _global_
+
+constants:
+  input_channels: 3
+  n_classes: 0
+
+dataset:
+  _target_: torchvision.datasets.Celeba
+  root: ${paths.data_root}
+  transform:
+    _target_: torchvision.transforms.Compose
+    transforms:
+      - _target_: torchvision.transforms.Resize
+        size:
+        - ${constants.image_size}
+        - ${constants.image_size}
+      - _target_: torchvision.transforms.ToTensor
+      - _target_: torchvision.transforms.RandomHorizontalFlip
+        p: 0.5
+  download: true

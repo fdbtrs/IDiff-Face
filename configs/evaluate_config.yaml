@@ -1,0 +1,44 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - paths: gpu_cluster                      # system-specific paths
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+evaluation:
+  seed: 0
+
+  aligned: True
+
+  model_names:
+    - "unet-cond-ca-bs512-150K-cpd25"
+    - "unet-cond-ca-bs512-150K"
+    - "unet-cond-ca-bs512-150K-cpd50"
+    - "unet-cond-adagn-bs512-150K-cpd25"
+    - "unet-cond-adagn-bs512-150K"
+    - "unet-cond-adagn-bs512-150K-cpd50"
+
+  frm_names:
+    - "elasticface"
+    #- "curricularface"
+
+  synthetic_contexts_name: "random_synthetic_uniform_5000" # "random_synthetic_uniform_5000"
+  authentic_contexts_name: "random_elasticface_ffhq_5000"
+
+  real_contexts:
+    elasticface:
+      real_contexts_path: data/embeddings_elasticface_ffhq_128.npy
+      real_contexts_aligned_path: data/embeddings_elasticface_ffhq_128_aligned.npy
+    curricularface:
+      real_contexts_path: data/embeddings_curricularface_ffhq_128.npy
+      real_contexts_aligned_path: data/embeddings_curricularface_ffhq_128_aligned.npy
+
+  authentic_real_comparison: True
+  synthetic_real_comparison: False
+  synthetic_synthetic_comparison: False
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .
