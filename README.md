@@ -1,6 +1,6 @@
 # README for the Official IDiff-Face Codebase
 
-This is a reduced anonymized version of the implementation used for the main submission. It includes the main scripts used for training and evaluating the IDiff-Face models.
+<img align="right" src="idiff-face-overview.png" width=400px> This is a reduced anonymized version of the implementation used for the main submission. It includes the main scripts used for training and evaluating the IDiff-Face models.
 
 Due to the size limit of the supplementary material, no pre-trained model checkpoints or generated synthetic datasets are included in this archive. However, they will be made publicly available together with the paper.
 
