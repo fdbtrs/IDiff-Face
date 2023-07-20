@@ -1,6 +1,24 @@
-# README for the Official IDiff-Face Codebase
+# Official: IDiff-Face Synthetic-based Face Recognition through Fizzy Identity-conditioned Diffusion Models
 
-<img align="right" src="idiff-face-overview.png" width=400px> This is a reduced anonymized version of the implementation used for the main submission. It includes the main scripts used for training and evaluating the IDiff-Face models.
+[![arXiv](https://img.shields.io/badge/cs.CV-arXiv%3A1234.12345-009d81.svg)](todo)
+[![ICCV2023](https://img.shields.io/badge/ICCV-2023-0083cc.svg)](todo)
+
+**[Fadi Boutros](https://www.igd.fraunhofer.de/en/institute/employees/fadi-boutros.html), [Jonas Henry Grebe](https://www.linkedin.com/in/jonasgrebe/?originalSubdomain=de), [Naser Damer](https://www.igd.fraunhofer.de/de/institut/mitarbeitende/naser-damer.html) & [Arjan Kuijper](https://www.igd.fraunhofer.de/de/institut/mitarbeitende/arjan-kuijper.html)**
+
+## Abstract
+
+<img align="right" src="idiff-face-overview.png" width=400px>
+
+The availability of large-scale authentic face databases has been crucial to the significant advances made in face recognition research over the past decade. However, recent legal and ethical concerns led to the retraction of many of these databases by their creators, raising questions about the continuity of future face recognition research without one of its key resources. Synthetic face datasets have emerged as a promising alternative to privacy-sensitive authentic data for face recognition development. However, recent synthetic datasets that are used to train face recognition models suffer either from limitations in intra-class diversity or cross-class (identity) discrimination, leading to less optimal verification accuracies, far away from the accuracies achieved by models trained on authentic data. This paper targets this issue by proposing IDiff-Face, a novel approach based on conditional latent diffusion models for synthetic identity generation with realistic identity variations for face recognition training. Through extensive evaluations, our proposed synthetic-based face recognition approach pushed the limits of state-of-the-art performances, achieving, for example, $98.00%$ accuracy on the LFW benchmark, far ahead from the recent synthetic-based face recognition solutions with $95.40%$ and closing the gap to authentic-based face recognition with $99.82%$ accuracy.
+
+---
+
+## Results
+
+---
+
+## Requirements
+This is a reduced anonymized version of the implementation used for the main submission. It includes the main scripts used for training and evaluating the IDiff-Face models.
 
 Due to the size limit of the supplementary material, no pre-trained model checkpoints or generated synthetic datasets are included in this archive. However, they will be made publicly available together with the paper.
 
