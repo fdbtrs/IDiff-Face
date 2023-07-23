@@ -19,11 +19,15 @@ The availability of large-scale authentic face databases has been crucial to the
 
 ## Authentic ID to Image
 
-<img align="center" src="etc/authentic_id_to_image.png" width=90%>
+<img align="center" src="etc/authentic_variations.png" width=90%>
 
 ## Synthetic ID to Image
 
+<img align="center" src="etc/synthetic_variations.png" width=90%>
 
+## Contextual Partial Dropout
+
+<img align="center" src="etc/different_cpd_levels.png" width=90%>
 
 ## Requirements
 This is a reduced anonymized version of the implementation used for the main submission. It includes the main scripts used for training and evaluating the IDiff-Face models.
