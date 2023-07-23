@@ -1,4 +1,4 @@
-# IDiff-Face Synthetic-based Face Recognition through Fizzy Identity-conditioned Diffusion Models (Official)
+# IDiff-Face: Synthetic-based Face Recognition through Fizzy Identity-conditioned Diffusion Models (Official)
 
 [![arXiv](https://img.shields.io/badge/cs.CV-arXiv%3A1234.12345-009d81.svg)](todo)
 [![ICCV2023](https://img.shields.io/badge/ICCV-2023-0083cc.svg)](todo)
