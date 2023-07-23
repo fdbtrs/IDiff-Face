@@ -25,9 +25,13 @@ The availability of large-scale authentic face databases has been crucial to the
 
 <img align="center" src="etc/synthetic_variations.png" width=90%>
 
-## Contextual Partial Dropout
+## Contextual Partial Dropout (CPD)
 
 <img align="center" src="etc/different_cpd_levels.png" width=90%>
+
+## Example for good intra-class variation
+
+<img align="center" src="etc/intra_class_variation-cpd50.png" width=90%>
 
 ## Requirements
 This is a reduced anonymized version of the implementation used for the main submission. It includes the main scripts used for training and evaluating the IDiff-Face models.
