@@ -60,10 +60,6 @@ This fair comparison of the existing synthetic-based face recognition methods cl
 
 <img align="center" src="etc/synthetic_variations.png" width=90%>
 
-### Contextual Partial Dropout (CPD)
-
-<img align="center" src="etc/different_cpd_levels.png" width=90%>
-
 ---
 
 ## How to use the code?
@@ -111,7 +107,7 @@ The dependencies for training the FR model are different. We used the training s
     
 
 ---
-## TODO: BibTeX Citation
+## Citing IDiff-Face
 
 If you use IDiff-Face in a scientific publication, we would appreciate you using the following citations:
 
@@ -134,9 +130,46 @@ booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vi
 }
 ```
 
-## Citing most influential Work
+## Most important references
 
-* **Rombach et. al**. *High-Resolution Image Synthesis with Latent Diffusion Models*. CVPR (2022). [https://doi.org/10.1007/s10109-020-00342-2](https://doi.org/10.48550/arxiv.2204.11824).
+```
+@inproceedings{DBLP:conf/cvpr/RombachBLEO22,
+  author       = {Robin Rombach and
+                  Andreas Blattmann and
+                  Dominik Lorenz and
+                  Patrick Esser and
+                  Bj{\"{o}}rn Ommer},
+  title        = {High-Resolution Image Synthesis with Latent Diffusion Models},
+  booktitle    = {{IEEE/CVF} Conference on Computer Vision and Pattern Recognition,
+                  {CVPR} 2022, New Orleans, LA, USA, June 18-24, 2022},
+  pages        = {10674--10685},
+  publisher    = {{IEEE}},
+  year         = {2022},
+  url          = {https://doi.org/10.1109/CVPR52688.2022.01042},
+  doi          = {10.1109/CVPR52688.2022.01042},
+  timestamp    = {Wed, 05 Oct 2022 16:31:19 +0200},
+  biburl       = {https://dblp.org/rec/conf/cvpr/RombachBLEO22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{DBLP:conf/cvpr/KarrasLA19,
+  author       = {Tero Karras and
+                  Samuli Laine and
+                  Timo Aila},
+  title        = {A Style-Based Generator Architecture for Generative Adversarial Networks},
+  booktitle    = {{IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR}
+                  2019, Long Beach, CA, USA, June 16-20, 2019},
+  pages        = {4401--4410},
+  publisher    = {Computer Vision Foundation / {IEEE}},
+  year         = {2019},
+  url          = {http://openaccess.thecvf.com/content\_CVPR\_2019/html/Karras\_A\_Style-Based\_Generator\_Architecture\_for\_Generative\_Adversarial\_Networks\_CVPR\_2019\_paper.html},
+  doi          = {10.1109/CVPR.2019.00453},
+  timestamp    = {Mon, 30 Aug 2021 17:01:14 +0200},
+  biburl       = {https://dblp.org/rec/conf/cvpr/KarrasLA19.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+```
 
 ## More information on remaining folders and scripts:
 ### Directories:
