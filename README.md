@@ -11,13 +11,21 @@
 
 The availability of large-scale authentic face databases has been crucial to the significant advances made in face recognition research over the past decade. However, recent legal and ethical concerns led to the retraction of many of these databases by their creators, raising questions about the continuity of future face recognition research without one of its key resources. Synthetic face datasets have emerged as a promising alternative to privacy-sensitive authentic data for face recognition development. However, recent synthetic datasets that are used to train face recognition models suffer either from limitations in intra-class diversity or cross-class (identity) discrimination, leading to less optimal verification accuracies, far away from the accuracies achieved by models trained on authentic data. This paper targets this issue by proposing IDiff-Face, a novel approach based on conditional latent diffusion models for synthetic identity generation with realistic identity variations for face recognition training. Through extensive evaluations, our proposed synthetic-based face recognition approach pushed the limits of state-of-the-art performances, achieving, for example, 98.00% accuracy on the LFW benchmark, far ahead from the recent synthetic-based face recognition solutions with 95.40% and closing the gap to authentic-based face recognition with 99.82% accuracy.
 
-## TODO: IDiff-Face Datasets and Pre-trained Models
+## TODO: IDiff-Face models
 
-- add download links
+Download links for the pre-generated 10K identities x 50 images datasets from the paper:
+- **IDiff-Face Synthetic Uniform (25% CPD)**
+- **IDiff-Face Synthetic Two-Stage (50% CPD)**
+
+Download links for the pre-trained IDiff-Face diffusion model weights:
+- **IDiff-Face Synthetic Uniform (25% CPD)**
+- **IDiff-Face Synthetic Two-Stage (50% CPD)**
+
+Download links for the pre-trained autoencoder weights that originally come from the `fhq256` LDM from [Rombach et al.](https://github.com/CompVis/latent-diffusion/blob/main/models/ldm/ffhq256/config.yaml). Specifically, the VQModelInterface submodule is manually extracted and split into its encoder and decoder models, since the encoder is only used during training and the decoder is only needed for sampling. The resulting .pt files are then expected to be saved under `models/autoencoder/first_stage_encoder_state_dict.pt` and `models/autoencoder/first_stage_decoder_state_dict.pt`, respectively.
 
 ## Results
 
-The following table shows the verification benchmark performances achieved by methods from related work in comparison to the ones of our proposed IDIff-Face approach. They have been reported by the respective authors themselves. For face recognition training on our synthetic (uniform) data, we used a ResNet-50 with an ElasticFace loss, which is exactly the same setup that has been used in the SFace and USynthFace works. More detailed results are presented in the paper.
+The following table shows the verification benchmark performances achieved by methods from related work in comparison to the ones of our proposed IDiff-Face approach. They have been reported by the respective authors themselves. For face recognition training on our synthetic (uniform) data, we used a ResNet-50 with an ElasticFace loss, which is exactly the same setup that has been used in the SFace and USynthFace works. More detailed results are presented in the paper.
 
 <table>
 <tr>
