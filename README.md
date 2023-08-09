@@ -1,5 +1,6 @@
 
-## This is the official repository of the paper: IDiff-Face: Synthetic-based Face Recognition through Fizzy Identity-conditioned Diffusion Models (Official)
+## This is the official repository of the paper: 
+## IDiff-Face: Synthetic-based Face Recognition through Fizzy Identity-conditioned Diffusion Models (Official)
 
 ## Accepted at ICCV 20223
 
@@ -149,7 +150,7 @@ The dependencies for training the FR model are different. We used the training s
               and this script can be used to split them to create identity-class folders for FR training
 
 
-## Citing IDiff-Face
+## Citation
 
 If you use IDiff-Face or any codes in this repository, please cite the following paper:
 
