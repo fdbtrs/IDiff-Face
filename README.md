@@ -5,7 +5,7 @@
 [![arXiv](https://img.shields.io/badge/cs.CV-arXiv%3A1234.12345-009d81.svg)](todo)
 [![ICCV2023](https://img.shields.io/badge/ICCV-2023-0083cc.svg)](todo)
 
-**[Fadi Boutros](https://www.igd.fraunhofer.de/en/institute/employees/fadi-boutros.html), [Jonas Henry Grebe](https://www.linkedin.com/in/jonasgrebe/?originalSubdomain=de),  [Arjan Kuijper](https://www.igd.fraunhofer.de/de/institut/mitarbeitende/arjan-kuijper.html) and [Naser Damer](https://www.igd.fraunhofer.de/de/institut/mitarbeitende/naser-damer.html) **
+**[Fadi Boutros](https://www.igd.fraunhofer.de/en/institute/employees/fadi-boutros.html), [Jonas Henry Grebe](https://www.linkedin.com/in/jonasgrebe/?originalSubdomain=de),  [Arjan Kuijper](https://www.igd.fraunhofer.de/de/institut/mitarbeitende/arjan-kuijper.html) and [Naser Damer](https://www.igd.fraunhofer.de/de/institut/mitarbeitende/naser-damer.html)**
 
 
 #### This work is the result of the master thesis by [Jonas Henry Grebe](https://publica.fraunhofer.de/entities/publication/2b0d0a69-0f93-4c6c-802d-8f3050b1742f/details).
