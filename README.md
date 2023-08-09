@@ -6,7 +6,7 @@
 
 **[Fadi Boutros](https://www.igd.fraunhofer.de/en/institute/employees/fadi-boutros.html), [Jonas Henry Grebe](https://github.com/jonasgrebe),  [Arjan Kuijper](https://www.igd.fraunhofer.de/de/institut/mitarbeitende/arjan-kuijper.html) and [Naser Damer](https://www.igd.fraunhofer.de/de/institut/mitarbeitende/naser-damer.html)**
 
-**This work is the result of the master thesis by [Jonas Henry Grebe](https://github.com/jonasgrebe).**
+**This work is the result of the [Master thesis](https://publica.fraunhofer.de/entities/publication/2b0d0a69-0f93-4c6c-802d-8f3050b1742f/details) by [Jonas Henry Grebe](https://github.com/jonasgrebe).**
 
 <img align="right" src="etc/idiff-face-overview.png" width=40%>
 
