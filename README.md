@@ -1,15 +1,17 @@
-# IDiff-Face: Synthetic-based Face Recognition through Fizzy Identity-conditioned Diffusion Models (Official)
+
+## This is the official repository of the paper: IDiff-Face: Synthetic-based Face Recognition through Fizzy Identity-conditioned Diffusion Models (Official)
+
+## Accepted at ICCV 20223
 
 [![arXiv](https://img.shields.io/badge/cs.CV-arXiv%3A1234.12345-009d81.svg)](todo)
 [![ICCV2023](https://img.shields.io/badge/ICCV-2023-0083cc.svg)](todo)
 
-**[Fadi Boutros](https://www.igd.fraunhofer.de/en/institute/employees/fadi-boutros.html), [Jonas Henry Grebe](https://www.linkedin.com/in/jonasgrebe/?originalSubdomain=de), [Naser Damer](https://www.igd.fraunhofer.de/de/institut/mitarbeitende/naser-damer.html) & [Arjan Kuijper](https://www.igd.fraunhofer.de/de/institut/mitarbeitende/arjan-kuijper.html)**
+**[Fadi Boutros](https://www.igd.fraunhofer.de/en/institute/employees/fadi-boutros.html), [Jonas Henry Grebe](https://www.linkedin.com/in/jonasgrebe/?originalSubdomain=de),  [Arjan Kuijper](https://www.igd.fraunhofer.de/de/institut/mitarbeitende/arjan-kuijper.html) and [Naser Damer](https://www.igd.fraunhofer.de/de/institut/mitarbeitende/naser-damer.html) **
 
-## Abstract
+
 
 <img align="right" src="etc/idiff-face-overview.png" width=40%>
 
-The availability of large-scale authentic face databases has been crucial to the significant advances made in face recognition research over the past decade. However, recent legal and ethical concerns led to the retraction of many of these databases by their creators, raising questions about the continuity of future face recognition research without one of its key resources. Synthetic face datasets have emerged as a promising alternative to privacy-sensitive authentic data for face recognition development. However, recent synthetic datasets that are used to train face recognition models suffer either from limitations in intra-class diversity or cross-class (identity) discrimination, leading to less optimal verification accuracies, far away from the accuracies achieved by models trained on authentic data. This paper targets this issue by proposing IDiff-Face, a novel approach based on conditional latent diffusion models for synthetic identity generation with realistic identity variations for face recognition training. Through extensive evaluations, our proposed synthetic-based face recognition approach pushed the limits of state-of-the-art performances, achieving, for example, 98.00% accuracy on the LFW benchmark, far ahead from the recent synthetic-based face recognition solutions with 95.40% and closing the gap to authentic-based face recognition with 99.82% accuracy.
 
 ## TODO: IDiff-Face models
 
@@ -21,7 +23,12 @@ Download links for the pre-trained IDiff-Face diffusion model weights:
 - **IDiff-Face Synthetic Uniform (25% CPD)**
 - **IDiff-Face Synthetic Two-Stage (50% CPD)**
 
-Download links for the pre-trained autoencoder weights that originally come from the `fhq256` LDM from [Rombach et al.](https://github.com/CompVis/latent-diffusion/blob/main/models/ldm/ffhq256/config.yaml). Specifically, the VQModelInterface submodule is manually extracted and split into its encoder and decoder models, since the encoder is only used during training and the decoder is only needed for sampling. The resulting .pt files are then expected to be saved under `models/autoencoder/first_stage_encoder_state_dict.pt` and `models/autoencoder/first_stage_decoder_state_dict.pt`, respectively.
+Download links for the pre-trained face recongtion models using IDiff-Face generated data:
+- **IDiff-Face Synthetic Uniform (25% CPD)**
+- **IDiff-Face Synthetic Two-Stage (50% CPD)**
+
+Download links for the pre-trained autoencoder weights that originally come from the `fhq256` LDM from [Rombach et al.](https://github.com/CompVis/latent-diffusion/blob/main/models/ldm/ffhq256/config.yaml) and strictly follow their licence.  
+Specifically, the VQModelInterface submodule is manually extracted and split into its encoder and decoder models, since the encoder is only used during training and the decoder is only needed for sampling. The resulting .pt files are then expected to be saved under `models/autoencoder/first_stage_encoder_state_dict.pt` and `models/autoencoder/first_stage_decoder_state_dict.pt`, respectively.
 
 ## Results
 
@@ -59,7 +66,7 @@ The following table shows the verification benchmark performances achieved by me
 This fair comparison of the existing synthetic-based face recognition methods clearly demonstrates that IDiff-Face outperforms the GAN-based ones by a large margin and the rendering-based DigiFace-1M as well, except for one benchmark (the difficult CFP-FP).
 
 ---
-## TODO: Examples
+## Sample images
 ### Authentic ID to Image
 
 <img align="center" src="etc/authentic_variations.png" width=90%>
@@ -115,69 +122,8 @@ The dependencies for training the FR model are different. We used the training s
     
 
 ---
-## Citing IDiff-Face
 
-If you use IDiff-Face in a scientific publication, we would appreciate you using the following citations:
 
-```
-@article{Boutros2023IDiffFace,
-    doi       = {TODO},
-    url       = {TODO},
-    author    = {Fadi Boutros and Jonas Henry Grebe and Naser Damer and Arjan Kuijper},
-    title     = {IDiff-Face: Synthetic-based Face Recognition through Fizzy Identity-conditioned Diffusion Models},
-booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    month     = {October},
-    year      = {2023},
-    pages     = {TODO}
-}
-
-@article{grebe2023identity,
-  title={Identity Synthesis via Latent Diffusion Models for Accurate Face Recognition},
-  author={Grebe, Jonas Henry},
-  year={2023}
-}
-```
-
-## Most important references
-
-```
-@inproceedings{DBLP:conf/cvpr/RombachBLEO22,
-  author       = {Robin Rombach and
-                  Andreas Blattmann and
-                  Dominik Lorenz and
-                  Patrick Esser and
-                  Bj{\"{o}}rn Ommer},
-  title        = {High-Resolution Image Synthesis with Latent Diffusion Models},
-  booktitle    = {{IEEE/CVF} Conference on Computer Vision and Pattern Recognition,
-                  {CVPR} 2022, New Orleans, LA, USA, June 18-24, 2022},
-  pages        = {10674--10685},
-  publisher    = {{IEEE}},
-  year         = {2022},
-  url          = {https://doi.org/10.1109/CVPR52688.2022.01042},
-  doi          = {10.1109/CVPR52688.2022.01042},
-  timestamp    = {Wed, 05 Oct 2022 16:31:19 +0200},
-  biburl       = {https://dblp.org/rec/conf/cvpr/RombachBLEO22.bib},
-  bibsource    = {dblp computer science bibliography, https://dblp.org}
-}
-
-@inproceedings{DBLP:conf/cvpr/KarrasLA19,
-  author       = {Tero Karras and
-                  Samuli Laine and
-                  Timo Aila},
-  title        = {A Style-Based Generator Architecture for Generative Adversarial Networks},
-  booktitle    = {{IEEE} Conference on Computer Vision and Pattern Recognition, {CVPR}
-                  2019, Long Beach, CA, USA, June 16-20, 2019},
-  pages        = {4401--4410},
-  publisher    = {Computer Vision Foundation / {IEEE}},
-  year         = {2019},
-  url          = {http://openaccess.thecvf.com/content\_CVPR\_2019/html/Karras\_A\_Style-Based\_Generator\_Architecture\_for\_Generative\_Adversarial\_Networks\_CVPR\_2019\_paper.html},
-  doi          = {10.1109/CVPR.2019.00453},
-  timestamp    = {Mon, 30 Aug 2021 17:01:14 +0200},
-  biburl       = {https://dblp.org/rec/conf/cvpr/KarrasLA19.bib},
-  bibsource    = {dblp computer science bibliography, https://dblp.org}
-}
-
-```
 
 ## More information on remaining folders and scripts:
 ### Directories:
@@ -201,3 +147,31 @@ booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vi
 - `create_sample_identity_contexts.py` contains code for identity-context generation
 - `split_identity_blocks.py`samples are saved as concatenated blocks per identity (can easily be modified),
               and this script can be used to split them to create identity-class folders for FR training
+
+
+## Citing IDiff-Face
+
+If you use IDiff-Face or any codes in this repository, please cite the following paper:
+
+```
+@article{Boutros2023IDiffFace,
+    author    = {Fadi Boutros and Jonas Henry Grebe  and Arjan Kuijper and Naser Damer},
+    title     = {IDiff-Face: Synthetic-based Face Recognition through Fizzy Identity-conditioned Diffusion Models},
+booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023}
+}
+
+```
+## Reference repositories
+- https://github.com/CompVis/latent-diffusion/
+- https://github.com/fdbtrs/ElasticFace/
+- https://github.com/fdbtrs/Unsupervised-Face-Recognition-using-Unlabeled-Synthetic-Data/
+
+## License
+
+```
+This project is licensed under the terms of the Attribution-NonCommercial-ShareAlike 4.0 
+International (CC BY-NC-SA 4.0) license. 
+Copyright (c) 2021 Fraunhofer Institute for Computer Graphics Research IGD Darmstadt
+```
