@@ -14,18 +14,19 @@ The availability of large-scale authentic face databases has been crucial to the
 
 ## Datasets and pretrained models (Coming soon)
 
-Download links for the pre-generated 10K identities x 50 images datasets from the paper:
-- **Synthetic Dataset: Synthetic Uniform (25% CPD)**
-- **Synthetic Dataset: Synthetic Two-Stage (50% CPD)**
-
 Download links for the pre-trained IDiff-Face diffusion model weights:
-- **Pre-trained IDiff-Face 25% CPD**
-- **Pre-trained IDiff-Face 50% CPD**
+- **Pre-trained IDiff-Face (25% CPD)**
+- **Pre-trained IDiff-Face (50% CPD)**
 
-Download links for the pre-trained face recognition models using IDiff-Face generated data:
-- **IDiff-Face Synthetic Uniform (25% CPD)**
-- **IDiff-Face Synthetic Two-Stage (50% CPD)**
+Download links for the pre-generated 10K identities x 50 images datasets from the paper:
+- **Synthetic Dataset #1: Synthetic Uniform (25% CPD)**
+- **Synthetic Dataset #2: Synthetic Two-Stage (50% CPD)**
+  
+Download links for the pre-trained ElasticFace face recognition models using IDiff-Face generated data:
+- **Pre-trained ElasticFace model on Synthetic Dataset #1**
+- **Pre-trained ElasticFace model on Synthetic Dataset #2**
 
+### Download for the setup
 Download links for the pre-trained autoencoder weights that originally come from the `fhq256` LDM from [Rombach et al.](https://github.com/CompVis/latent-diffusion/blob/main/models/ldm/ffhq256/config.yaml) and strictly follow their licence. The VQModelInterface submodule has been manually extracted and split into its encoder and decoder models, since the encoder is only used during training and the decoder is only needed for sampling:
 - **first_stage_encoder_state_dict.pt**
 - **first_stage_decoder_state_dict.pt**
