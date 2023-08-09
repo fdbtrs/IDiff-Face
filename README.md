@@ -14,7 +14,7 @@
 <img align="right" src="etc/idiff-face-overview.png" width=40%>
 
 
-## TODO: IDiff-Face models
+## Datasets and pretrained models (Coming soon)
 
 Download links for the pre-generated 10K identities x 50 images datasets from the paper:
 - **IDiff-Face Synthetic Uniform (25% CPD)**
