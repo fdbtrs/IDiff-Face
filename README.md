@@ -132,7 +132,7 @@ The dependencies for training the FR model are different. We used the training s
 ### Directories:
 - `configs/` contains the configuration .yaml files
 - `data/` contains the training images and training embeddings
-- `iffusion/` contains the DDPM code
+- `diffusion/` contains the DDPM code
 - `models/` contains the PyTorch modules and model structures
 - `samples/` will contain the generated (aligned) samples, their extracted features and the contexts used for sampling
 - `evaluation/` will contain the computed comparison scores
