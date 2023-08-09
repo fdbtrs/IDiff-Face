@@ -22,12 +22,15 @@ Download links for the pre-trained IDiff-Face diffusion model weights:
 - **IDiff-Face Synthetic Uniform (25% CPD)**
 - **IDiff-Face Synthetic Two-Stage (50% CPD)**
 
-Download links for the pre-trained face recongtion models using IDiff-Face generated data:
+Download links for the pre-trained face recognition models using IDiff-Face generated data:
 - **IDiff-Face Synthetic Uniform (25% CPD)**
 - **IDiff-Face Synthetic Two-Stage (50% CPD)**
 
-Download links for the pre-trained autoencoder weights that originally come from the `fhq256` LDM from [Rombach et al.](https://github.com/CompVis/latent-diffusion/blob/main/models/ldm/ffhq256/config.yaml) and strictly follow their licence.  
-Specifically, the VQModelInterface submodule is manually extracted and split into its encoder and decoder models, since the encoder is only used during training and the decoder is only needed for sampling. The resulting .pt files are then expected to be saved under `models/autoencoder/first_stage_encoder_state_dict.pt` and `models/autoencoder/first_stage_decoder_state_dict.pt`, respectively.
+Download links for the pre-trained autoencoder weights that originally come from the `fhq256` LDM from [Rombach et al.](https://github.com/CompVis/latent-diffusion/blob/main/models/ldm/ffhq256/config.yaml) and strictly follow their licence. The VQModelInterface submodule has been manually extracted and split into its encoder and decoder models, since the encoder is only used during training and the decoder is only needed for sampling:
+- **models/autoencoder/first_stage_encoder_state_dict.pt**
+- **models/autoencoder/first_stage_decoder_state_dict.pt**
+
+The resulting .pt files  are then expected to be saved under `models/autoencoder/first_stage_encoder_state_dict.pt` and `models/autoencoder/first_stage_decoder_state_dict.pt`, respectively.
 
 ## Results
 
