@@ -15,12 +15,12 @@ The availability of large-scale authentic face databases has been crucial to the
 ## Datasets and pretrained models (Coming soon)
 
 Download links for the pre-generated 10K identities x 50 images datasets from the paper:
-- **IDiff-Face Synthetic Uniform (25% CPD)**
-- **IDiff-Face Synthetic Two-Stage (50% CPD)**
+- **Synthetic Dataset: Synthetic Uniform (25% CPD)**
+- **Synthetic Dataset: Synthetic Two-Stage (50% CPD)**
 
 Download links for the pre-trained IDiff-Face diffusion model weights:
-- **IDiff-Face Synthetic Uniform (25% CPD)**
-- **IDiff-Face Synthetic Two-Stage (50% CPD)**
+- **Pre-trained IDiff-Face 25% CPD**
+- **Pre-trained IDiff-Face 50% CPD**
 
 Download links for the pre-trained face recognition models using IDiff-Face generated data:
 - **IDiff-Face Synthetic Uniform (25% CPD)**
