@@ -2,6 +2,7 @@
 ## This is the official repository of the paper: 
 ## IDiff-Face: Synthetic-based Face Recognition through Fizzy Identity-conditioned Diffusion Models (Official)
 
+## This work is done during [Jonas Henry Grebe](https://publica.fraunhofer.de/entities/publication/2b0d0a69-0f93-4c6c-802d-8f3050b1742f/details) master thesis.
 ## Accepted at ICCV 20223
 
 [![arXiv](https://img.shields.io/badge/cs.CV-arXiv%3A1234.12345-009d81.svg)](todo)
