@@ -27,8 +27,8 @@ Download links for the pre-trained face recognition models using IDiff-Face gene
 - **IDiff-Face Synthetic Two-Stage (50% CPD)**
 
 Download links for the pre-trained autoencoder weights that originally come from the `fhq256` LDM from [Rombach et al.](https://github.com/CompVis/latent-diffusion/blob/main/models/ldm/ffhq256/config.yaml) and strictly follow their licence. The VQModelInterface submodule has been manually extracted and split into its encoder and decoder models, since the encoder is only used during training and the decoder is only needed for sampling:
-- **models/autoencoder/first_stage_encoder_state_dict.pt**
-- **models/autoencoder/first_stage_decoder_state_dict.pt**
+- **first_stage_encoder_state_dict.pt**
+- **first_stage_decoder_state_dict.pt**
 
 The resulting .pt files  are then expected to be saved under `models/autoencoder/first_stage_encoder_state_dict.pt` and `models/autoencoder/first_stage_decoder_state_dict.pt`, respectively.
 
@@ -84,7 +84,7 @@ This fair comparison of the existing synthetic-based face recognition methods cl
 This is a reduced anonymized version of the implementation used for the main submission. It includes the main scripts used for training and evaluating the IDiff-Face models. All experiments of this project were conducted within a Docker container, whose `Dockerfile` is included in this archive. However, the scripts are itself not depending on Docker and thus the commands provided in this README to run the scripts are kept basic and thus might have to be slightly altered to match the specific environment of the user. You also might have to alter the root paths under `configs/paths/gpuc_cluster.yaml`.
 
 ### Setup
-Download the FFHQ dataset (128x128) and put the `70.000` unlabelled images under `data/ffhq_128/`. The training embeddings used as contexts during training are NOT provided under `data/embeddings_elasticface_128.npy` due to the size limitation. They have to be extracted using the `extract_face_embeddings_from_dir.py` script. For that, the pre-trained ElasticFace-Arc model weights have to be downloaded from the [official ElasticFace repository](https://github.com/fdbtrs/ElasticFace) and placed under `utils/Elastic_R100_295672backbone.pth`. The [pre-trained autoencoder](https://ommer-lab.com/files/latent-diffusion/ffhq.zip) for the latent diffusion training is obtained from the pre-trained `fhq256` LDM from [Rombach et al.](https://github.com/CompVis/latent-diffusion/blob/main/models/ldm/ffhq256/config.yaml). Specifically, the VQModelInterface submodule is manually extracted and split into its encoder and decoder models, since the encoder is only used during training and the decoder is only needed for sampling. The resulting .pt files are then expected to be saved under `models/autoencoder/first_stage_encoder_state_dict.pt` and `models/autoencoder/first_stage_decoder_state_dict.pt`, respectively.
+Download the FFHQ dataset (128x128) and put the `70.000` unlabelled images under `data/ffhq_128/`. The training embeddings used as contexts during training are NOT provided under `data/embeddings_elasticface_128.npy` due to the size limitation. They have to be extracted using the `extract_face_embeddings_from_dir.py` script. For that, the pre-trained ElasticFace-Arc model weights have to be downloaded from the [official ElasticFace repository](https://github.com/fdbtrs/ElasticFace) and placed under `utils/Elastic_R100_295672backbone.pth`. The [pre-trained autoencoder](https://ommer-lab.com/files/latent-diffusion/ffhq.zip) for the latent diffusion training is obtained from the pre-trained `fhq256` LDM from [Rombach et al.](https://github.com/CompVis/latent-diffusion/blob/main/models/ldm/ffhq256/config.yaml). For more information, see the downloads section above.
 
 ---
 ### Training a new model
