@@ -174,5 +174,5 @@ booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vi
 ```
 This project is licensed under the terms of the Attribution-NonCommercial-ShareAlike 4.0 
 International (CC BY-NC-SA 4.0) license. 
-Copyright (c) 2021 Fraunhofer Institute for Computer Graphics Research IGD Darmstadt
+Copyright (c) 2023 Fraunhofer Institute for Computer Graphics Research IGD Darmstadt
 ```
