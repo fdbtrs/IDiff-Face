@@ -3,6 +3,8 @@
 
 [![arXiv](https://img.shields.io/badge/cs.CV-arXiv%3A1234.12345-009d81.svg)](http://arxiv.org/abs/2308.04995)
 [![ICCV2023](https://img.shields.io/badge/ICCV-2023-0083cc.svg)](https://iccv2023.thecvf.com/)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/idiff-face-synthetic-based-face-recognition/synthetic-face-recognition-on-lfw)](https://paperswithcode.com/sota/synthetic-face-recognition-on-lfw?p=idiff-face-synthetic-based-face-recognition)
+
 
 
 **This work is the result of the [Master thesis](https://publica.fraunhofer.de/entities/publication/2b0d0a69-0f93-4c6c-802d-8f3050b1742f/details) by [Jonas Henry Grebe](https://github.com/jonasgrebe).**
