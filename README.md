@@ -25,8 +25,7 @@ Download links for the pre-generated 10K identities x 50 images datasets from th
 - [Synthetic Dataset #2: Synthetic Two-Stage (25% CPD)](https://drive.google.com/drive/folders/1-V2MuYrEBsaFrqkQDpAwf1eQx3l9I-9r?usp=sharing)
   
 Download links for the pre-trained face recognition models using IDiff-Face generated data:
-- **Pre-trained model on Synthetic Dataset #1**
-- **Pre-trained model on Synthetic Dataset #2**
+- [IDifface-ResNet50-CosFace](https://drive.google.com/drive/folders/1jXUW92GcLtwIDUOyI65BmJHYNTw7rHw3?usp=sharing)
 
 ### Download for the setup
 Download links for the pre-trained autoencoder weights that originally come from the `fhq256` LDM from [Rombach et al.](https://github.com/CompVis/latent-diffusion/blob/main/models/ldm/ffhq256/config.yaml) and strictly follow their licence. The VQModelInterface submodule has been manually extracted and split into its encoder and decoder models, since the encoder is only used during training and the decoder is only needed for sampling:
