@@ -6,7 +6,7 @@ defaults:
   - override hydra/job_logging: disabled
 
 checkpoint:
-  path: "idiff-face-iccv2023-code/trained_models/unet-cond-ca-bs512-150K-cpd25"
+  path: "IDiff-Face/trained_models/unet-cond-ca-bs512-150K-cpd25"
 
   global_step: null
   use_non_ema: false
@@ -14,7 +14,7 @@ checkpoint:
 sampling:
   seed: 42
 
-  contexts_file: "idiff-face-iccv2023-code/samples/contexts/random_synthetic_uniform_15000.npy"
+  contexts_file: "IDiff-Face/samples/contexts/random_synthetic_uniform_15000.npy"
 
   batch_size: 50
   n_contexts: 10050

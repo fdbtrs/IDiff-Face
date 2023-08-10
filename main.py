@@ -18,7 +18,7 @@ from utils.helpers import print_status, count_model_parameters, ensure_path_join
 import torchmetrics as tm
 
 import sys
-sys.path.insert(0, 'idiff-face-iccv2023-code/')
+sys.path.insert(0, 'IDiff-Face/')
 
 os.environ["TORCH_DISTRIBUTED_DEBUG"] = "DETAIL"
 

@@ -16,7 +16,7 @@ from models.autoencoder.vqgan import VQEncoderInterface, VQDecoderInterface
 from utils.helpers import ensure_path_join, denormalize_to_zero_to_one
 
 import sys
-sys.path.insert(0, 'idiff-face-iccv2023-code/')
+sys.path.insert(0, 'IDiff-Face/')
 
 
 class DiffusionSamplerLite(LightningLite):

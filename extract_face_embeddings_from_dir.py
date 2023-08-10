@@ -22,7 +22,7 @@ parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(inspect.getfile(ins
 sys.path.insert(0, parent_dir)
 
 import sys
-sys.path.insert(0, 'idiff-face-iccv2023-code/')
+sys.path.insert(0, 'IDiff-Face/')
 
 from utils.iresnet import iresnet100, iresnet50
 from utils.irse import IR_101
@@ -150,13 +150,13 @@ if __name__ == "__main__":
     parser.add_argument(
         "--data_dir",
         type=str,
-        default="idiff-face-iccv2023-code/data/ffhq_128",
+        default="IDiff-Face/data/ffhq_128",
         help="path to data directory",
     )
     parser.add_argument(
         "--out_dir",
         type=str,
-        default="idiff-face-iccv2023-code/data",
+        default="IDiff-Face/data",
         help="directory to save embedding file to"
     )
     args = parser.parse_args()

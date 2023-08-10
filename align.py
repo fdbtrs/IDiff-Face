@@ -23,7 +23,7 @@ import sys
 
 from facenet_pytorch import MTCNN
 
-sys.path.insert(0, 'idiff-face-iccv2023-code/')
+sys.path.insert(0, 'IDiff-Face/')
 
 
 def load_image_paths(datadir, skip_files=None):

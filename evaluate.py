@@ -24,7 +24,7 @@ import sys
 
 from utils.iresnet import iresnet100
 
-sys.path.insert(0, 'idiff-face-iccv2023-code/')
+sys.path.insert(0, 'IDiff-Face/')
 
 
 class EvaluatorLite(LightningLite):

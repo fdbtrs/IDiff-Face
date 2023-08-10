@@ -49,7 +49,7 @@ training:
     T_mult: 2
   checkpoint:
     restore: false
-    path: "idiff-face-iccv2023-code/outputs/2022-12-05"
+    path: "IDiff-Face/outputs/2022-12-05"
 
 hydra:
   job:

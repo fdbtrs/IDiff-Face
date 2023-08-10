@@ -30,7 +30,7 @@ from utils.irse import IR_101
 from utils.synface_resnet import LResNet50E_IR
 from utils.moco import MoCo
 
-sys.path.insert(0, 'idiff-face-iccv2023-code/')
+sys.path.insert(0, 'IDiff-Face/')
 
 
 class EncoderLite(LightningLite):
