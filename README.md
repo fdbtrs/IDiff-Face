@@ -11,8 +11,9 @@
 
 <img align="right" src="etc/idiff-face-overview.png" width=40%>
 
+The availability of large-scale authentic face databases has been crucial to the significant advances made in face recognition research over the past decade. However, recent legal and ethical concerns led to the retraction of many of these databases by their creators, raising questions about the continuity of future face recognition research without one of its key resources. Synthetic face datasets have emerged as a promising alternative to privacy-sensitive authentic data for face recognition development. However, recent synthetic datasets that are used to train face recognition models suffer either from limitations in intra-class diversity or cross-class (identity) discrimination, leading to less optimal verification accuracies, far away from the accuracies achieved by models trained on authentic data. This paper targets this issue by proposing IDiff-Face, a novel approach based on conditional latent diffusion models for synthetic identity generation with realistic identity variations for face recognition training. Through extensive evaluations, our proposed synthetic-based face recognition approach pushed the limits of state-of-the-art performances, achieving, for example, 98.00% accuracy on the LFW benchmark, far ahead from the recent synthetic-based face recognition solutions with 95.40% and closing the gap to authentic-based face recognition with 99.82% accuracy.
 
-## Datasets and pretrained models (Coming soon)
+## Datasets and pretrained models
 
 ### Please share your name, affiliation, and official email in the request form
 
