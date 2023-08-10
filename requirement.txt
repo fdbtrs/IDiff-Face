@@ -1,0 +1,8 @@
+pytorch-lightning
+hydra-core
+einops
+facenet-pytorch
+scikit-image
+seaborn
+pyeer
+
