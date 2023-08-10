@@ -51,7 +51,7 @@ def sample_random_input_elasticface_embeddings(n_contexts, device="cuda"):
     random_input = torch.randn([n_contexts, 3, 112, 112])
     batch_size = 100
 
-    model = load_elasticface(device, "/workspace/igd-slbt-master-thesis/utils/Elastic_R100_295672backbone.pth")
+    model = load_elasticface(device, "/workspace/IDiff-Face//utils/Elastic_R100_295672backbone.pth")
     model.eval()
 
     dataset = torch.utils.data.TensorDataset(random_input)

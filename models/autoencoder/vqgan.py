@@ -36,7 +36,7 @@ class VQDecoderInterface(torch.nn.Module):
         n_embed = 8192
 
         config = OmegaConf.load(first_stage_config_path)
-        # "/home/grebe/igd-slbt-master-thesis/models/autoencoder/first_stage_config.yaml")
+        # "/home/grebe/IDiff-Face//models/autoencoder/first_stage_config.yaml")
         dd_config = config.params.ddconfig
 
         self.decoder = Decoder(**dd_config)
@@ -45,7 +45,7 @@ class VQDecoderInterface(torch.nn.Module):
         self.post_quant_conv = torch.nn.Conv2d(embed_dim, dd_config["z_channels"], 1)
 
         state_dict = torch.load(decoder_state_dict_path)
-        # "/home/grebe/igd-slbt-master-thesis/models/autoencoder/first_stage_decoder_state_dict.pt"
+        # "/home/grebe/IDiff-Face//models/autoencoder/first_stage_decoder_state_dict.pt"
         self.load_state_dict(state_dict)
 
     def forward(self, h, force_not_quantize=False):

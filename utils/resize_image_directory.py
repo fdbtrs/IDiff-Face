@@ -1,8 +1,8 @@
 from PIL import Image
 import os
 
-src_path = "E:/GitHub/igd-slbt-master-thesis/data/FFHQ/images_dummy/images"
-tar_path = "E:/GitHub/igd-slbt-master-thesis/data/FFHQ/images_32px/images"
+src_path = "E:/GitHub/IDiff-Face//data/FFHQ/images_dummy/images"
+tar_path = "E:/GitHub/IDiff-Face//data/FFHQ/images_32px/images"
 os.makedirs(tar_path, exist_ok=True)
 
 

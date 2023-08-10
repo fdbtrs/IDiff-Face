@@ -13,9 +13,9 @@ d = 10
 x = torch.linspace(0, 1, T // d)
 
 paths = [
-    "E:/GitHub/igd-slbt-master-thesis/additional/DALL-2/raw/DALL·E 2022-09-29 10.20.48.png",
-    "E:/GitHub/igd-slbt-master-thesis/data/FFHQ/images/67863.png",
-    "E:/GitHub/igd-slbt-master-thesis/data/FFHQ/images/66912.png"
+    "E:/GitHub/IDiff-Face//additional/DALL-2/raw/DALL·E 2022-09-29 10.20.48.png",
+    "E:/GitHub/IDiff-Face//data/FFHQ/images/67863.png",
+    "E:/GitHub/IDiff-Face//data/FFHQ/images/66912.png"
 ]
 
 image_path = paths[0]

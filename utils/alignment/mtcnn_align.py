@@ -18,7 +18,7 @@ from PIL import Image
 
 import sys
 
-sys.path.insert(0, '/igd-slbt-master-thesis/')
+sys.path.insert(0, '/IDiff-Face//')
 
 mtcnn = MTCNN(
     select_largest=True, min_face_size=1, post_process=False, device="cuda:0"
@@ -130,13 +130,13 @@ def main():
     parser.add_argument(
         "--in_folder",
         type=str,
-        default="/workspace/igd-slbt-master-thesis/data/ffhq_128",
+        default="/workspace/IDiff-Face//data/ffhq_128",
         help="folder with images",
     )
     parser.add_argument(
         "--out_folder",
         type=str,
-        default="/workspace/igd-slbt-master-thesis/aligned",
+        default="/workspace/IDiff-Face//aligned",
         help="folder to save aligned images",
     )
     parser.add_argument("--batch_size", type=int, default=1)

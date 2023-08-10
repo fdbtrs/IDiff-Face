@@ -16,7 +16,7 @@ def compute_ffhq_statistics(image_size: int = 32):
     )
 
     dataset = ImageFolder(
-        root='E:/GitHub/igd-slbt-master-thesis/data/FFHQ/images_dummy',
+        root='E:/GitHub/IDiff-Face//data/FFHQ/images_dummy',
         transform=transform,
     )
     dataloader = DataLoader(dataset, batch_size=128, shuffle=True, num_workers=0)
