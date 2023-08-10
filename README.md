@@ -21,16 +21,16 @@ Download links for the pre-trained IDiff-Face diffusion model weights:
 - [Pre-trained IDiff-Face (25% CPD)](https://drive.google.com/drive/folders/1bzKEzM32WuEdQd8U2ShEdBiZWNqiyTMS?usp=sharing)
 - [Pre-trained IDiff-Face (50% CPD)](https://drive.google.com/drive/folders/1bzKEzM32WuEdQd8U2ShEdBiZWNqiyTMS?usp=sharing)
 
-Download links for the pre-generated 10K identities x 50 images datasets from the paper:
+Download links for the pre-generated synthetic 10K identities x 50 images datasets from the paper:
 - [Synthetic Dataset #1: Synthetic Uniform (25% CPD)](https://drive.google.com/drive/folders/1-V2MuYrEBsaFrqkQDpAwf1eQx3l9I-9r?usp=sharing)
 - [Synthetic Dataset #2: Synthetic Two-Stage (25% CPD)](https://drive.google.com/drive/folders/1-V2MuYrEBsaFrqkQDpAwf1eQx3l9I-9r?usp=sharing)
   
-Download links for the pre-trained face recognition models using IDiff-Face generated data:
-- [IDifface-ResNet50-CosFace](https://drive.google.com/drive/folders/1jXUW92GcLtwIDUOyI65BmJHYNTw7rHw3?usp=sharing)
+Download links for the pre-trained face recognition models using synthetic IDiff-Face generated data:
+- [IDiff-Face-ResNet50-CosFace](https://drive.google.com/drive/folders/1jXUW92GcLtwIDUOyI65BmJHYNTw7rHw3?usp=sharing)
 
 ### Download for the setup
-Download links for the pre-trained autoencoder weights that originally come from the `fhq256` LDM from [Rombach et al.](https://github.com/CompVis/latent-diffusion/blob/main/models/ldm/ffhq256/config.yaml) and strictly follow their licence. The VQModelInterface submodule has been manually extracted and split into its encoder and decoder models, since the encoder is only used during training and the decoder is only needed for sampling:
-- [Link to the encoder and decoder model weights](https://drive.google.com/drive/folders/1d-zs3yjsnzOMNkz7qy3JSb-fMf0UmSdT?usp=sharing)
+Download links for the pre-trained autoencoder weights that originally come from the `fhq256` LDM from [Rombach et al.](https://github.com/CompVis/latent-diffusion/blob/main/models/ldm/ffhq256/config.yaml) and strictly follow their licence. Their VQModelInterface submodule has been manually extracted and split into its encoder and decoder models, since the encoder is only used during training and the decoder is only needed for sampling:
+- [Encoder and decoder model weights](https://drive.google.com/drive/folders/1d-zs3yjsnzOMNkz7qy3JSb-fMf0UmSdT?usp=sharing)
 
 The resulting .pt files  are then expected to be saved under `models/autoencoder/first_stage_encoder_state_dict.pt` and `models/autoencoder/first_stage_decoder_state_dict.pt`, respectively.
 
