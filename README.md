@@ -30,7 +30,7 @@ Download links for the pre-trained face recognition models using IDiff-Face gene
 
 ### Download for the setup
 Download links for the pre-trained autoencoder weights that originally come from the `fhq256` LDM from [Rombach et al.](https://github.com/CompVis/latent-diffusion/blob/main/models/ldm/ffhq256/config.yaml) and strictly follow their licence. The VQModelInterface submodule has been manually extracted and split into its encoder and decoder models, since the encoder is only used during training and the decoder is only needed for sampling:
-- [first_stage_encoder_state_dict.pt first_stage_decoder_state_dict.pt](https://drive.google.com/drive/folders/1d-zs3yjsnzOMNkz7qy3JSb-fMf0UmSdT?usp=sharing)
+- [Link to the encoder and decoder model weights](https://drive.google.com/drive/folders/1d-zs3yjsnzOMNkz7qy3JSb-fMf0UmSdT?usp=sharing)
 
 The resulting .pt files  are then expected to be saved under `models/autoencoder/first_stage_encoder_state_dict.pt` and `models/autoencoder/first_stage_decoder_state_dict.pt`, respectively.
 
