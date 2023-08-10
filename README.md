@@ -12,6 +12,8 @@
 
 ## Datasets and pretrained models (Coming soon)
 
+### Please share your name, affiliation, and official email in the request form
+
 Download links for the pre-trained IDiff-Face diffusion model weights:
 - [Pre-trained IDiff-Face (25% CPD)](https://drive.google.com/drive/folders/1bzKEzM32WuEdQd8U2ShEdBiZWNqiyTMS?usp=sharing)
 - [Pre-trained IDiff-Face (50% CPD)](https://drive.google.com/drive/folders/1bzKEzM32WuEdQd8U2ShEdBiZWNqiyTMS?usp=sharing)
