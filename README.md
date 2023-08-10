@@ -13,8 +13,8 @@
 ## Datasets and pretrained models (Coming soon)
 
 Download links for the pre-trained IDiff-Face diffusion model weights:
-- **Pre-trained IDiff-Face (25% CPD)**
-- **Pre-trained IDiff-Face (50% CPD)**
+- [Pre-trained IDiff-Face (25% CPD)](https://drive.google.com/drive/folders/1bzKEzM32WuEdQd8U2ShEdBiZWNqiyTMS?usp=sharing)
+- [Pre-trained IDiff-Face (50% CPD)](https://drive.google.com/drive/folders/1bzKEzM32WuEdQd8U2ShEdBiZWNqiyTMS?usp=sharing)
 
 Download links for the pre-generated 10K identities x 50 images datasets from the paper:
 - [Synthetic Dataset #1: Synthetic Uniform (25% CPD)](https://drive.google.com/drive/folders/1-V2MuYrEBsaFrqkQDpAwf1eQx3l9I-9r?usp=sharing)
