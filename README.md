@@ -129,7 +129,7 @@ The dependencies for training the FR model are different. We used the training s
 If you use IDiff-Face or any codes in this repository, please cite the following paper:
 
 ```
-@article{Boutros2023IDiffFace,
+@inproceedings{Boutros2023IDiffFace,
     author    = {Fadi Boutros and Jonas Henry Grebe  and Arjan Kuijper and Naser Damer},
     title     = {IDiff-Face: Synthetic-based Face Recognition through Fizzy Identity-conditioned Diffusion Models},
 booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
