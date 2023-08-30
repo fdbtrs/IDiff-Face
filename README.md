@@ -55,7 +55,7 @@ It includes the main scripts used for training and evaluating the IDiff-Face mod
 You also might have to alter the root paths under `configs/paths/gpuc_cluster.yaml`.
 
 ### Setup
-- Download the [FFHQ dataset (128x128)](https://github.com/NVlabs/ffhq-dataset) and put the `70.000` unlabelled images under `data/ffhq_128/`. The training embeddings used as contexts during training are NOT provided under `data/embeddings_elasticface_128.npy` and can be extracted using the `extract_face_embeddings_from_dir.py` script. 
+Download the [FFHQ dataset (128x128)](https://github.com/NVlabs/ffhq-dataset) and put the `70.000` unlabelled images under `data/ffhq_128/`. The training embeddings used as contexts during training are NOT provided under `data/embeddings_elasticface_128.npy` and can be extracted using the `extract_face_embeddings_from_dir.py` script. 
 For that, the pre-trained ElasticFace-Arc model weights have to be downloaded from the [official ElasticFace repository](https://github.com/fdbtrs/ElasticFace) and placed under `utils/Elastic_R100_295672backbone.pth`. 
 The [pre-trained autoencoder](https://ommer-lab.com/files/latent-diffusion/ffhq.zip) for the latent diffusion training is obtained from the pre-trained `fhq256` LDM from [Rombach et al.](https://github.com/CompVis/latent-diffusion/blob/main/models/ldm/ffhq256/config.yaml) please follow their licence distribution. For more information, see the downloads section above.
 
