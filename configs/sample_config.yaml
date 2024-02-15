@@ -6,20 +6,19 @@ defaults:
   - override hydra/job_logging: disabled
 
 checkpoint:
-  path: "IDiff-Face/trained_models/unet-cond-ca-bs512-150K-cpd25"
+  path: "./trained_models/unet-cond-ca-bs512-150K-cpd25"
 
   global_step: null
   use_non_ema: false
 
 sampling:
   seed: 42
-
-  contexts_file: "IDiff-Face/samples/contexts/random_synthetic_uniform_15000.npy"
+  contexts_file: "./samples/contexts/random_synthetic_uniform_5000.npy"
 
   batch_size: 50
-  n_contexts: 10050
+  n_contexts: 5 # 10050
 
-  n_samples_per_context: 50
+  n_samples_per_context: 4 #50
 
 hydra:
   output_subdir: null

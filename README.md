@@ -8,6 +8,8 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/idiff-face-synthetic-based-face-recognition/synthetic-face-recognition-on-calfw)](https://paperswithcode.com/sota/synthetic-face-recognition-on-calfw?p=idiff-face-synthetic-based-face-recognition)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/idiff-face-synthetic-based-face-recognition/synthetic-face-recognition-on-cplfw)](https://paperswithcode.com/sota/synthetic-face-recognition-on-cplfw?p=idiff-face-synthetic-based-face-recognition)
 
+### <span style="color: red"> Update: </span> The sampling instructions have been updated. check the sampling section
+
 **This work is the result of the [Master thesis](https://publica.fraunhofer.de/entities/publication/2b0d0a69-0f93-4c6c-802d-8f3050b1742f/details) by [Jonas Henry Grebe](https://github.com/jonasgrebe).**
 
 <img align="right" src="etc/idiff-face-overview.png" width=40%>
@@ -71,6 +73,18 @@ In addition to that, it has to be ensured that the `dataset: ffhq_folder` option
 
 ---
 ### Sampling with a (pre-trained) IDiff-Face model
+<span style="color: red">***** Update ***** </span>
+
+<span style="color: red"> The requirements (requirements_sampling.txt) is exported from pip list and added to the project folder. </span>
+
+- <span style="color: red"> Install python 3.7.4   </span>
+- <span style="color: red"> run pip install -r.  </span>
+- <span style="color: red"> Download the pretrained models including ".hydra" folder and place it inside trained_models.  See download section </span>
+- <span style="color: red"> Download Encoder and decoder and place them inside models/autoencoder. See download section </span>
+
+
+
+
 For reproducibility and consistency, the synthetic contexts are NOT generated on-the-fly during sampling. Instead, they are pre-generated and saved in `.npy` files, which contain Python `dicts` with identity_names/dummy_names as keys and the associated context vector as value. This is the same structure used for the training embeddings. In this archive, some pre-generated `two-stage` contexts are already included. In order to generate samples with `synthetic_uniform` contexts, quickly execute the `create_sample_identity_contexts.py` script, which will pre-compute 15.000 synthetic uniform contexts that you can use for sampling. Then, specify the path to the trained model and the contexts file that shall be used for sampling in the `sample_config.yaml`. There you can also configure the number of identities to use from the provided contexts file and the number of images per identity context. Those samples will be saved under `samples/MODEL_NAME/CONTEXT_NAME` as identity blocks, e.g. a 4x4 grid block of 128x128 images (total block size is then 512x512). These blocks can then be splitted using e.g. then `split_identity_blocks.py` script. But before doing that, they have to be aligned. The sampling script can be started via:
     
     python create_sample_identity_contexts.py
