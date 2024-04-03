@@ -8,7 +8,13 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/idiff-face-synthetic-based-face-recognition/synthetic-face-recognition-on-calfw)](https://paperswithcode.com/sota/synthetic-face-recognition-on-calfw?p=idiff-face-synthetic-based-face-recognition)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/idiff-face-synthetic-based-face-recognition/synthetic-face-recognition-on-cplfw)](https://paperswithcode.com/sota/synthetic-face-recognition-on-cplfw?p=idiff-face-synthetic-based-face-recognition)
 
+<red>Updates </red>
+
+
 ### <span style="color: red"> Update: </span> The sampling instructions have been updated. check the sampling section
+
+### The submitted pretrained FR model to the SDFR competition can be downloaded under [IGD-IDiff-Face](https://drive.google.com/drive/folders/1eVEjYReB8m-Dba6i0q4Hb1d63BYAjMbU?usp=sharing)
+
 
 **This work is the result of the [Master thesis](https://publica.fraunhofer.de/entities/publication/2b0d0a69-0f93-4c6c-802d-8f3050b1742f/details) by [Jonas Henry Grebe](https://github.com/jonasgrebe).**
 
